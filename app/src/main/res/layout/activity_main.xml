@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#3F51B5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:background="#DEDEDE"
+            android:paddingLeft="8dp">
+
+            <EditText
+                android:id="@+id/search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:background="@null"
+                android:hint="请输入商品"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:singleLine="true"
+                android:textColor="#606467"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/act_search_cearch"
+                android:layout_width="28dip"
+                android:layout_height="28dip"
+                android:layout_gravity="left|center_vertical"
+                android:background="@null"
+                android:padding="5dip"
+                android:src="@mipmap/search" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <net.neiquan.search.ui.FlowTagLayout
+        android:id="@+id/flowTagLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" />
+
+    <LinearLayout
+        android:id="@+id/clear_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:padding="5dp"
+            android:src="@mipmap/delete" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ececec"
+            android:padding="8dp"
+            android:text="清空搜索历史" />
+    </LinearLayout>
+</LinearLayout>
